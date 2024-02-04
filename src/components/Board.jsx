@@ -18,7 +18,7 @@ const Board = ({ squares, onclick }) => {
   //   ]);
 
   function renderSquare(i) {
-    return <button onClick={() => onclick(i)}>{squares[i]}</button>;
+    return <button className="board_button"onClick={() => onclick(i)}>{squares[i]}</button>;
   }
   return (
     <>
